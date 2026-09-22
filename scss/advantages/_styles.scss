@@ -1,0 +1,71 @@
+@use '../vars' as *;
+
+#advantages {
+  .advantages {
+    padding: 112px 0 120px 0;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding-bottom: 24px;
+    }
+    &__subtitle {
+      width: 158px;
+      > img {
+        width: 26px;
+        height: auto;
+        margin-right: 12px;
+      }
+      > span {
+      }
+    }
+
+    &__title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: $dark_accent;
+    }
+
+    &__description {
+      text-align: center;
+      color: $gray;
+      max-width: 672px;
+      line-height: 24px;
+      font-size: 18px;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      max-width: 307px;
+      > img {
+        width: 40px;
+        height: auto;
+      }
+
+      > h2 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $dark_accent;
+      }
+
+      > p {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 24px;
+        text-align: center;
+        color: $gray;
+      }
+    }
+  }
+}

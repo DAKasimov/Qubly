@@ -1,0 +1,111 @@
+@use '../vars' as *;
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (min-width: 1200px) {
+  #header {
+    .inner_header {
+      .burger {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  #header {
+    .inner_header {
+      .burger {
+        display: none;
+      }
+    }
+  }
+}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #header {
+    margin-bottom: 70px;
+
+    .inner_header {
+      .burger {
+        display: none;
+      }
+    }
+  }
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #header {
+    margin-bottom: 30px;
+    .inner_header {
+      .burger {
+        display: none;
+      }
+    }
+
+    .inner_header {
+      .logo {
+        height: 45px;
+        width: 45px;
+      }
+
+      .right_side_header {
+        .mnu_top {
+          > li {
+            margin-right: 10px;
+            font-size: 14px;
+          }
+        }
+        .btn_simple {
+          padding: 6px 15px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+} /**/ /* Extra Small Devices,
+  Phones */
+@media only screen and (max-width: 480px) {
+  #header {
+    margin-bottom: 10px;
+
+    .inner_header {
+      .burger {
+        display: flex;
+      }
+
+      .right_side_header {
+        .mnu_top {
+          display: none;
+        }
+
+        .btn_simple {
+          display: none;
+        }
+      }
+    }
+  }
+} /**/ /* Custom,
+  iPhone Retina */
+@media only screen and (max-width: 320px) {
+} /**/ /*========== Mobile First ==========*/ /* Custom,
+  iPhone Retina */
+@media only screen and (min-width: 320px) {
+} /**/ /* Extra Small Devices,
+  Phones */
+@media only screen and (min-width: 480px) {
+} /**/ /* Small Devices,
+  Tablets */
+@media only screen and (min-width: 768px) {
+} /**/ /* Medium Devices,
+  Desktops */
+@media only screen and (min-width: 992px) {
+} /**/ /* Large Devices,
+  Wide Screens */
+@media only screen and (min-width: 1200px) {
+} /**/

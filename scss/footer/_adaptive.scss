@@ -1,0 +1,93 @@
+@use '../vars' as *;
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (min-width: 1200px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #footer {
+    .footer {
+      &__title {
+        font-size: 18px;
+      }
+
+      &__description {
+        font-size: 18px;
+      }
+
+      &__icons {
+        justify-content: space-between;
+        > a {
+          > img {
+            width: 30px;
+          }
+        }
+      }
+
+      &__title {
+        margin-bottom: 0;
+      }
+
+      &__links {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        > li {
+          > a {
+            font-size: 16px;
+          }
+        }
+      }
+
+      &__input {
+        margin-top: 10px;
+
+        > input {
+          width: 100%;
+          font-size: 18px;
+          height: 50px;
+        }
+
+        > img {
+          right: 12px;
+        }
+      }
+    }
+  }
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+} /**/ /* Extra Small Devices,
+  Phones */
+@media only screen and (max-width: 480px) {
+} /**/ /* Custom,
+  iPhone Retina */
+@media only screen and (max-width: 320px) {
+} /**/ /*========== Mobile First ==========*/ /* Custom,
+  iPhone Retina */
+@media only screen and (min-width: 320px) {
+} /**/ /* Extra Small Devices,
+  Phones */
+@media only screen and (min-width: 480px) {
+} /**/ /* Small Devices,
+  Tablets */
+@media only screen and (min-width: 768px) {
+} /**/ /* Medium Devices,
+  Desktops */
+@media only screen and (min-width: 992px) {
+} /**/ /* Large Devices,
+  Wide Screens */
+@media only screen and (min-width: 1200px) {
+} /**/

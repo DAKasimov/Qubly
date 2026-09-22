@@ -1,0 +1,122 @@
+@use 'sass:color';
+@use 'vars' as *;
+
+.cont {
+  position: relative;
+}
+
+.left-side {
+  padding: 60px 20px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $accent;
+  z-index: 20;
+  top: 0;
+  left: -100%;
+  transition: 0.5s left ease-in-out;
+
+  &__content {
+    //position: fixed;
+  }
+
+  &__menu {
+    list-style-type: none;
+    //position: relative;
+
+    > li {
+      margin-bottom: 15px;
+      width: max-content;
+      font-size: 20px;
+
+      &:first-child {
+        cursor: pointer;
+
+        &:hover > .sub_menu {
+          display: block;
+        }
+
+        > a {
+          vertical-align: middle;
+          display: inline-block;
+          margin-right: 4px;
+        }
+        > img {
+          vertical-align: middle;
+          width: 8px;
+          height: 4px;
+          display: none;
+        }
+        > .sub_menu {
+          list-style-type: none;
+          //position: absolute;
+          //top: 28px;
+          //left: 0;
+          //background-color: #fff;
+          //box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+          //border-radius: 10px;
+          //z-index: 10;
+          font-size: 18px;
+          //padding: 5px 0;
+          //animation: 0.6s opac ease;
+          > li {
+            display: block;
+            > a {
+              display: block;
+              text-decoration: none;
+              font-weight: 500;
+              color: #ffffff;
+              transition: color 0.4s ease-in-out;
+              padding: 3px 10px;
+              &:hover {
+                color: $accent;
+              }
+            }
+          }
+        }
+      }
+
+      > a {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        color: #ffffff;
+        transition: color 0.4s ease-in-out;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    &__line {
+      height: 3px;
+      background-color: #ffffff;
+
+      &_first {
+        transform: rotate(45deg) translate(-7px, -7px);
+        width: 140%;
+      }
+
+      &_second {
+        transform: rotate(-45deg) translate(9px, -9px);
+        width: 140%;
+      }
+    }
+  }
+}
+
+.left-side_active {
+  left: 0;
+}

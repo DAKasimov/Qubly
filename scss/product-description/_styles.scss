@@ -1,0 +1,59 @@
+@use '../vars' as *;
+
+#product-description {
+  .product-description {
+    margin-bottom: 22px;
+
+    .first-row {
+      margin-bottom: 120px;
+    }
+
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 24px;
+      padding: 155px 0 110px 0;
+    }
+
+    .info2 {
+      padding: 0;
+    }
+
+    &__notification {
+      max-width: max-content;
+
+      > img {
+        width: 24px;
+        height: auto;
+        margin-right: 14px;
+      }
+      > span {
+      }
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: $dark_accent;
+    }
+
+    &__description {
+      line-height: 24px;
+      color: $gray;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@use 'sass:color';
+@use '../vars' as *;
+@use '../utils' as *;
+
+#promo {
+  .promo {
+    &__info {
+      padding-top: 35px;
+      width: 472px;
+    }
+
+    &__release {
+      width: 260px;
+      height: 40px;
+      gap: 12px;
+      margin-bottom: 24px;
+
+      > div > a {
+        color: $accent;
+        transition: all 0.4s ease;
+        text-decoration: none;
+        border-bottom: 1px solid $accent;
+
+        &:hover {
+          color: color.adjust($accent, $lightness: -10%);
+          border-color: color.adjust($accent, $lightness: -10%);
+        }
+      }
+    }
+
+    &__icon {
+      height: auto;
+      width: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+      color: #000;
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    &__subtitle {
+      line-height: 24px;
+      font-weight: 500;
+      font-size: 17px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 24px;
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation-name: frwd;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 284px;
+    }
+
+    &__button {
+      &_purple {
+        width: 145px;
+      }
+
+      &_white {
+        width: 130px;
+      }
+    }
+  }
+}

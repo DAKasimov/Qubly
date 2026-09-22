@@ -1,0 +1,150 @@
+@use 'vars' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+*::-webkit-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #000;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//btns
+
+.btn_simple {
+  cursor: pointer;
+  border-radius: 23px;
+  border: 1px solid $accent;
+  background-color: transparent;
+  font-weight: 500;
+  color: $accent;
+  text-decoration: none;
+  padding: 6px 34px;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: $accent;
+    color: #ffffff;
+  }
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 23px;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: $accent;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: $accent;
+    color: #ffffff;
+  }
+}
+//btns
+
+.notif {
+  border-radius: 20px;
+  background-color: $light_accent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  color: $accent;
+  font-weight: 500;
+}
+
+.add_accent {
+  fill: $accent !important;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes frwd {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}

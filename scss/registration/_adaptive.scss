@@ -1,0 +1,99 @@
+@use '../vars' as *;
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (min-width: 1200px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #registration {
+    .registration {
+      padding-top: 60px;
+      margin-bottom: 60px;
+
+      &__title {
+        text-align: center;
+      }
+
+      &__info {
+        max-width: 100%;
+        margin-bottom: 90px;
+      }
+
+      &__logos {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #registration {
+    .registration {
+      padding-top: 40px;
+
+      &__title {
+        text-align: center;
+        font-size: 32px;
+      }
+    }
+  }
+} /**/ /* Extra Small Devices,
+  Phones */
+@media only screen and (max-width: 480px) {
+  #registration {
+    .registration {
+      &__title {
+        font-size: 28px;
+      }
+
+      &__button {
+        padding: 12px;
+      }
+
+      &__subline {
+        width: 90px;
+      }
+
+      &__form {
+        padding: 20px 10px;
+        transform: translateY(-20px);
+      }
+
+      &__input {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      &__button {
+        font-size: 16px;
+      }
+    }
+  }
+} /**/ /* Custom,
+  iPhone Retina */
+@media only screen and (max-width: 320px) {
+} /**/ /*========== Mobile First ==========*/ /* Custom,
+  iPhone Retina */
+@media only screen and (min-width: 320px) {
+} /**/ /* Extra Small Devices,
+  Phones */
+@media only screen and (min-width: 480px) {
+} /**/ /* Small Devices,
+  Tablets */
+@media only screen and (min-width: 768px) {
+} /**/ /* Medium Devices,
+  Desktops */
+@media only screen and (min-width: 992px) {
+} /**/ /* Large Devices,
+  Wide Screens */
+@media only screen and (min-width: 1200px) {
+} /**/

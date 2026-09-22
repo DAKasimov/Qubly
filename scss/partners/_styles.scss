@@ -1,0 +1,108 @@
+@use '../vars' as *;
+
+#partners {
+  .partners {
+    min-height: 730px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    margin-bottom: 120px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: $dark_accent;
+      display: none;
+
+      &_active {
+        display: block;
+      }
+    }
+
+    &__image {
+      width: 80px;
+      height: auto;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &__subtitle {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+      max-width: 143px;
+    }
+
+    &__line {
+      height: 1px;
+      width: 100%;
+      background-color: #dec9fa;
+    }
+
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__card {
+      height: 30px;
+      width: 145px;
+      cursor: pointer;
+      position: relative;
+
+      > .wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover svg g path,
+      &:active svg g path {
+        fill: $accent;
+      }
+      &:hover svg g polygon,
+      &:active svg g polygon {
+        fill: $accent;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+
+        g {
+          path {
+            transition: 0.4s all ease;
+            fill: #000000;
+          }
+
+          polygon {
+            transition: 0.4s all ease;
+            fill: #000000;
+          }
+        }
+      }
+    }
+  }
+}
